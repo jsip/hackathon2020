@@ -1,7 +1,6 @@
 module Response
   def json_response(object, status = :ok)
     csv_to_array(object)
-    puts object.inspect
     render json: object, status: status
   end
 
