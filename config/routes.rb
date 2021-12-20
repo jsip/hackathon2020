@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :dashboard do
+    resources :notes
+  end
+
   namespace :api do
     resources :tweets
     resources :state_temperatures
